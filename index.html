@@ -32,7 +32,7 @@ Getting close to a 1.0 release.
 A brand new project for various Java utility classes.
 </p>
 <h3>
-org.agilewiki.utils.cache
+<a href="http://laforge49.github.io/projects/utils/0.1.0/api/index.html?org/agilewiki/utils/cache/package-summary.html">org.agilewiki.utils.cache</a>
 </h3>
 <p>
 How do you write a cache that can be used across multiple threads?
@@ -40,15 +40,14 @@ The class java.util.LinkedHashMap is a pretty good cache, but it is not thread s
 And adding a bunch of synchronization locks might not be the fastest way to handle caching in a thread-safe way.
 </p>
 <p>
-The solution provided here is to have a separate cache for each thread, but to track all cache entries in a concurrent
+The solution provided here is to have a separate cache for each thread for maintaining hard links to a minimum number of references, 
+but to track all cache entries in a concurrent
 weak-valued hash map. If any cache has an entry for a given key, 
 then the concurrent hash map will have a weak reference to that entry with the same key.
-A cache then returns a value when either it has an entry for a given key 
-or when the concurrent hash map has a non-empty weak reference for that key. 
+Retrieval then is made against the concurrent hash map while updating the thread's cache to track references accessed by that thread. 
 </p>
 <p>
-Performance then is gained by only having a sync lock (in ConcurrentHashMap)
-when adding an entry to a cache.
+The code is lock-free and high performance.
 </p>
 <h2>
 <a href="https://github.com/laforge49?tab=repositories">Other Projects</a>
