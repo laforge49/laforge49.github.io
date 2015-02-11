@@ -26,10 +26,10 @@ The net result being code that is both simpler and more robust, and hence easier
 Getting close to a 1.0 release.
 </p>
 <h2>
-<a href="projects/utils/index.html">utils</a>
+<a href="projects/utils/index.html">utils</a> - Advanced Java Utilty Classes
 </h2>
 <p>
-A brand new project for various Java utility classes.
+Here are some helpful classes that you may not find elsewhere.
 </p>
 <h3>
 <a href="http://laforge49.github.io/projects/utils/0.1.0/api/index.html?org/agilewiki/utils/cache/package-summary.html">org.agilewiki.utils.cache</a>
@@ -48,6 +48,15 @@ Retrieval then is made against the concurrent hash map while updating the thread
 </p>
 <p>
 The code is lock-free and high performance.
+</p>
+<h3>
+<a href="http://laforge49.github.io/projects/utils/0.1.0/api/index.html?org/agilewiki/utils/ref/package-summary.html">org.agilewiki.utils.ref</a>
+</h3>
+<p>
+Need to work with a collection of weak references? These can become quite large at times if you are depending on a 
+reference queue for removing empty references because gc may be slow to detect otherwise unreachable references.
+This means that you probably should not use a hash map to hold a weak references collection as a hash map only scales up, never down.
+The ConcurrentWeakValueMap addresses these issues for you.
 </p>
 <h2>
 <a href="https://github.com/laforge49?tab=repositories">Other Projects</a>
