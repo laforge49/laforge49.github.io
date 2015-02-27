@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html>
-<header>
-<title>
-Projects Overview
-</title>
-</header>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Projects Overview</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  });
+  </script>
+</head>
 <body>
 <p>
 Projects Overview
@@ -12,9 +21,10 @@ Projects Overview
 <h1>Projects Overview</h1>
 <p>I've got too many projects, many of them quite old.
 So here are some notes to help you out.</p>
-<h2>
-I. JActor2
-</h2>
+ 
+<div id="accordion">
+  <h3>JActor2 - A Robust Alternative to Threads and Locks</h3>
+  <div>
 <p>
 JActor2 is a multi-threaded OO programming model, 
 inspired by Alan Kay's early thoughts on Objects. 
@@ -25,9 +35,9 @@ The net result being code that is both simpler and more robust, and hence easier
 <strong>JActor2 project:</strong> <a href="projects/JActor2/index.html">documentation &amp; downloads</a>,
 <a href="https://github.com/laforge49/JActor2">GitHub repository</a>.
 </p>
-<h2>
-II. JActor-Modules
-</h2>
+  </div>
+  <h3>JActor-Modules - Adds Modularity to JActor2</h3>
+  <div>
 <p>
 JActor-Modules adds modularity to JActor2.
 </p>
@@ -35,15 +45,15 @@ JActor-Modules adds modularity to JActor2.
 <strong>JActor-Modules project:</strong> <a href="projects/JActor-Modules/index.html">documentation &amp; downloads</a>,
 <a href="https://github.com/laforge49/JActor-Modules">GitHub repository</a>.
 </p>
-<h2>
-III. utils - Advanced Java Utilty Classes
-</h2>
+  </div>
+  <h3>utils - Advanced Java Utilty Classes</h3>
+  <div>
 <p>
 Here are some helpful classes that you may not find elsewhere.
 </p>
-<h3>
+<h4>
 <a href="http://laforge49.github.io/projects/utils/0.1.0/api/index.html?org/agilewiki/utils/cache/package-summary.html">org.agilewiki.utils.cache</a>
-</h3>
+</h4>
 <p>
 How do you write a cache that can be used across multiple threads?
 The class java.util.LinkedHashMap is a pretty good cache, but it is not thread safe.
@@ -59,9 +69,9 @@ Retrieval then is made against the concurrent hash map while updating the thread
 <p>
 The code is lock-free and high performance.
 </p>
-<h3>
+<h4>
 <a href="http://laforge49.github.io/projects/utils/0.1.0/api/index.html?org/agilewiki/utils/ref/package-summary.html">org.agilewiki.utils.ref</a>
-</h3>
+</h4>
 <p>
 Need to work with a collection of weak references? These can become quite large at times if you are depending on a 
 reference queue for removing empty references because gc may be slow to detect otherwise unreachable references.
@@ -72,15 +82,17 @@ The ConcurrentWeakValueMap addresses these issues for you.
 <strong>utils project:</strong> <a href="projects/utils/index.html">documentation &amp; downloads</a>,
 <a href="https://github.com/laforge49/utils">GitHub repository</a>.
 </p>
-<h2>
-IV. Other Projects
-</h2>
+  </div>
+  <h3>Other Projects</h3>
+  <div>
 <p>
 I have not listed all of the projects above. Some are quite old, others moderately current.
 Here are all the <a href="https://github.com/laforge49?tab=repositories">project repositories</a> on GitHub.
 </p>
+  </div>
+</div>
 <h2>
-V. AgileWikiDevelopers
+AgileWikiDevelopers Group
 </h2>
 <p>
 A Google Group that you are free to join,
