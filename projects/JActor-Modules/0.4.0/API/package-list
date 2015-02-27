@@ -1,0 +1,17 @@
+org.agilewiki.jactor2.a
+org.agilewiki.jactor2.common
+org.agilewiki.jactor2.common.filters
+org.agilewiki.jactor2.common.pubSub
+org.agilewiki.jactor2.common.services
+org.agilewiki.jactor2.common.transmutable
+org.agilewiki.jactor2.common.transmutable.transactions
+org.agilewiki.jactor2.common.transmutable.tssmTransactions
+org.agilewiki.jactor2.common.widgets
+org.agilewiki.jactor2.common.widgets.buffers
+org.agilewiki.jactor2.durable.transactions
+org.agilewiki.jactor2.durable.widgets
+org.agilewiki.jactor2.durable.widgets.box
+org.agilewiki.jactor2.durable.widgets.integer
+org.agilewiki.jactor2.durable.widgets.string
+org.agilewiki.jactor2.modules
+org.agilewiki.jactor2.modules.impl
