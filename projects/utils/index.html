@@ -1,12 +1,21 @@
 <!doctype html>
 <html lang="en">
-<header>
+<head>
   <meta charset="utf-8">
 <title>
 utils
 </title>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-</header>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  });
+  </script>
+</head>
 <body>
 <p>
 <a href="../../index.html">Projects Overview</a> &gt; utils documentation &amp; downloads
@@ -26,10 +35,26 @@ License: <a href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Sof
 <h2>
 Releases
 </h2>
+<div id="accordion">
+<h3>
+2/11/2015 version 0.1.0: A multi-threaded cache
+</h3>
+<div>
+<p>
+Jar file: <a href="0.1.0/utils-0.1.0.jar">utils</a>
+</p>
+<p>
+Source Jar file: <a href="0.1.0/utils-0.1.0-sources.jar">utils</a></td>
+</p>
+<h3>
+Documents
+</h3>
 <ul>
 <li>
-2/11/2015 <a href="0.1.0/index.html">version 0.1.0: A multi-threaded cache</a>
+<a href="0.1.0/API/index.html">API</a>
 </li>
 </ul>
+</div>
+</div>
 </body>
 </html>
