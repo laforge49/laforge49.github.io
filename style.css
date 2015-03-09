@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF; 
+}
+.container {
+    width: 1010px;
+    hight: auto;
+    margin: 0 auto; 
+}
+
+#main .container {
+    background: url(images/agile.jpeg) no-repeat;
+    width: 1010px;
+    hight: auto; 
+}
+
+#content    {width: 990px;
+             hight: auto; 
+             padding-top: 280px;
+}
+#content h1 {
+    font-size: 38px;
+    color: #25937d;
+    padding-top: 50px;}
+
+#content h2 {
+    font-size: 36px;
+    color: #25937d; 
+}
+ 
+#content h3 {
+    font-size: 24px;
+    color: #25937d;
+    padding top: 10px;
+} 
+#content h4 {
+    font-size: 18px;
+    color: #25937d;
+    font-weight: normal; 
+}
+ 
+#content p {
+    font-size: 14px;
+    color: #546662;
+    padding-top: 5px; 
+}
+ 
+#content small {
+    font-size: 12px;
+    color: #373737; 
+}
+ 
+#content a {
+    color: #27cbdc;
+    font-weight: bold;
+    text-decoration: none; 
+}
+#footer {
+    background: url(images/footer.jpeg) no-repeat;
+    width: 1010px;
+    hight: auto;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    margin-top: auto;
+    color: #fff; 
+}
+#img { 
+       padding-left: 460px;
+       padding-right: 470px;
+       align:center; 
+}
