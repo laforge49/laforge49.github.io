@@ -77,6 +77,20 @@ org.agilewiki.utils.maplist.immutable
 An immutable variation of map list, these classes are idea for use in a multi-tasking environment.
 </p>
 <h4>
+org.agilewiki.utils.durable
+</h4>
+<p>
+Adds custom serialization/deserialization for immutable objects.
+</p>
+<h4>
+org.agilewiki.utils.lazydurable
+</h4>
+<p>
+Rediculously fast deserialization/reserialization performance is achieved by only deserializing what
+is needed and reserializing only what has changed. Thread safety is achieved through the use of 
+non-polling atomic references to keep queries completely unconstrained.
+</p>
+<h4>
 org.agilewiki.utils.cache
 </h4>
 <p>
