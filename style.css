@@ -58,6 +58,15 @@ body {
     font-weight: bold;
     text-decoration: none; 
 }
+#content ul li  {
+    font-size: 14px;
+    color:  #546662;
+}
+
+#content li li {
+	padding-left: 10px;
+	background: url(images/bu.jpg) no-repeat;
+}
 #footer {
     background: url(images/footer.jpeg) no-repeat;
     width: 1010px;
