@@ -1,0 +1,10 @@
+org.agilewiki.utils
+org.agilewiki.utils.cache
+org.agilewiki.utils.dsm
+org.agilewiki.utils.ids
+org.agilewiki.utils.ids.composites
+org.agilewiki.utils.immutable
+org.agilewiki.utils.immutable.collections
+org.agilewiki.utils.immutable.scalars
+org.agilewiki.utils.ref
+org.agilewiki.utils.virtualcow
